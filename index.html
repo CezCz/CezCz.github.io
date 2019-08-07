@@ -19,9 +19,13 @@
      section {
        margin-bottom:0.5rem;
      }
-     .m-t-0 {
-       margin:0 !important;
-     }
+     @media print
+    {
+        .no-print, .no-print *
+        {
+            display: none !important;
+        }
+    }
   </style>
 
 </head>
@@ -87,7 +91,7 @@
               <p>ID Scientific IT Services ETH Zurich </p>
               <p class="small">
                   OpenBIS plugins (meta-data and data Excel sheet parser
-                  <a href="https://sissource.ethz.ch/sispub/openbis/tree/master/openbis_standard_technologies/dist/core-plugins/xls-import/1" target="_blank" rel="noopener"> &#128279; </a>), <br/>
+                  <a class="no-print" href="https://sissource.ethz.ch/sispub/openbis/tree/master/openbis_standard_technologies/dist/core-plugins/xls-import/1" target="_blank" rel="noopener"> &#128279; </a>), <br/>
                   <strong> Technologies : Java, Spring, Jython, Python PostgreSQL</strong><br/>
               </p>
               <hr class="m-0"/>
@@ -95,12 +99,12 @@
                   Web application presenting works of Gottfried Semper <br/>
                   <strong> Technologies : Python, Flask, JavaScript, React, MongoDB</strong><br/>
               </p>
-              <hr class="m-t-0"/>
+              <hr />
               <p class="small">
                    Suporting existing web applcations <br/>
                   <strong> Technologies : jQuery, Django</strong><br/>
               </p>
-              <hr class="m-t-0"/>
+              <hr />
               <p class="small">
                   Tutoring PHD students on coding best practices <br/>
               </p>
@@ -119,10 +123,10 @@
                   <p class="small">
                     Projects for PTC concerning Windchill PDM commercial software, <br/>
                     Extending export functionality to handle missing objects between server instances <br/>
-                    Rewriting deprecated Java Applet modules, Graphical Workflow Manager <a href="https://support.ptc.com/help/wnc/r11.2.0.0/en/index.html#page/Windchill_Help_Center/WFAdminAbout.html" target="_blank" rel="noopener"> &#128279; </a> and Lifecycle Manager. <a href="https://support.ptc.com/help/wnc/r11.2.0.0/en/index.html#page/Windchill_Help_Center%2FLCPropertiesLCEditView.html" target="_blank" rel="noopener"> &#128279; </a> <br/>
+                    Rewriting deprecated Java Applet modules, Graphical Workflow Manager <a class="no-print" href="https://support.ptc.com/help/wnc/r11.2.0.0/en/index.html#page/Windchill_Help_Center/WFAdminAbout.html" target="_blank" rel="noopener"> &#128279; </a> and Lifecycle Manager. <a href="https://support.ptc.com/help/wnc/r11.2.0.0/en/index.html#page/Windchill_Help_Center%2FLCPropertiesLCEditView.html" target="_blank" rel="noopener"> &#128279; </a> <br/>
                     <strong>Technologies: Java, Java Applets, Java RestApi, JavaScript, AngularJS</strong>
                   </p>
-                  <hr class="m-t-0"/>
+                  <hr />
                   <p class="small">
                     Projects for Roche concerning internal software <br/>
                     Software for monitoring Roche's global marketing programs <br/>
